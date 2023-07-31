@@ -34,8 +34,8 @@ class MainActivity : AppCompatActivity() {
             text1.text = str
         }
 
-        val fetch_bahanchod: SharedPreferences = getSharedPreferences("Demo", MODE_PRIVATE)
-        val fetched = fetch_bahanchod.getString("msg", "Plese Enter something to save in textview.")
+        val fetch_data: SharedPreferences = getSharedPreferences("Demo", MODE_PRIVATE)
+        val fetched = fetch_data.getString("msg", "Plese Enter something to save in textview.")
         text1.text = fetched
 
     }
